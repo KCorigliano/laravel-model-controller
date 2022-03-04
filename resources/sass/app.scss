@@ -1,1 +1,30 @@
 @import "~bootstrap/scss/bootstrap";
+
+body{
+    background-color: dimgray;
+    overflow: hidden;
+    .row{
+        margin-top: 50vh;
+        transform: translate(0, -50%);
+        .card{
+            box-shadow: 0 0 10px #ccc;
+            background-color: coral;
+            color:dimgray;
+            text-shadow: 0 0 10px #ccc;
+            border: 3px solid chocolate;
+            transition: all 0.3s;
+
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+                transition: all 0.3s;
+            }
+        
+            span{
+                font-weight: 400;
+                font-size: 16px;
+                color: white;
+            }
+        }
+    }
+}
