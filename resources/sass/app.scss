@@ -7,16 +7,18 @@ body{
         margin-top: 50vh;
         transform: translate(0, -50%);
         .card{
-            box-shadow: 0 0 10px #ccc;
             background-color: coral;
             color:dimgray;
             text-shadow: 0 0 10px #ccc;
             border: 3px solid chocolate;
+            filter: brightness(80%);
             transition: all 0.3s;
-
+            
             &:hover{
+                box-shadow: 0 0 10px #ccc;
                 transform: scale(1.1);
                 cursor: pointer;
+                filter: brightness(100%);
                 transition: all 0.3s;
             }
         
