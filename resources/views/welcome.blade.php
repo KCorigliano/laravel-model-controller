@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    ciao
+    @foreach ($data as $movie)
+        <p>{{$movie["id"]}}</p>
+        <p>{{$movie["title"]}}</p>
+        <p>{{$movie["original_title"]}}</p>
+        <p>{{$movie["nationality"]}}</p>
+        <p>{{$movie["date"]}}</p>
+        <p>{{$movie["vote"]}}</p>
+    @endforeach
 </body>
 </html>
